@@ -1,0 +1,18 @@
+<div class="container" *ngIf = "photo">
+  <table>
+    <th>AlbumID</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Thumbnailurl</th>
+    <tr>
+      <td>{{photos.albumId}}</td>
+      <td>{{photos.id}}</td>
+      <td>{{photos.title}}</td>
+      <td>{{photos.url}}</td>
+      <td>{{photos.thumbnailUrl}}</td>
+    </tr>
+  </table> 
+  <button (click)="onPrev()" [disabled]=disablePrev>Prev</button>
+  <button (click)="onNext()"[disabled]=disableNext>Next</button>
+</div>

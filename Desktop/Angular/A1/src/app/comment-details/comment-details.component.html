@@ -1,0 +1,14 @@
+<div class="container" *ngIf = "comment">
+  PostId: {{comment.postId}} 
+  <br>
+  Id: {{comment.id}}
+  <br>
+  Name: {{comment.name}} 
+  <br>
+  Email: {{comment.email}}
+  <br>
+  Body: {{comment.body}}
+  <br>
+  <button class="btn btn-primary" (click)="onBack()">Back</button>
+</div>
+
