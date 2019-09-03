@@ -1,0 +1,24 @@
+<!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"> -->
+  
+    <mat-paginator [length]="totalPosts" [pageSize]="postsPerPage" [pageSizeOptions]="pageSizeOptions"
+    (page)="onChangedPage($event)">
+  </mat-paginator>
+  <div class="container">
+  <table class="table table-bordered table-dark">
+      <th>ID</th>
+      <th>Title</th>
+      <th>PageCount</th>
+      <th>PublishDate</th>
+  
+    <!-- <td> -->
+      <tr *ngFor="let book of books">
+        <td>{{book.ID}}</td>
+        <td>{{book.Title}}</td>
+        <!-- <td>{{book.Description}}</td> -->
+        <td>{{book.PageCount}}</td>
+        <!-- <td>{{book.Excerpt}}</td> -->
+        <td>{{book.PublishDate}}</td>
+      </tr>
+    <!-- </td> -->
+  </table>
+  </div>
